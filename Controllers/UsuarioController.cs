@@ -14,8 +14,8 @@ namespace project1.Controllers
     {
 
         [HttpPost]
-        public string Post([FromBody] UsuarioModel usuario) {
-            return usuario.Name == "Davi" && usuario.Password == "123" ? "OK" : "ERRO";
+        public int Post([FromBody] UsuarioModel usuario) {
+            return usuario.Name == "Davi" && usuario.Password == "123" ? 1 : 0;
         }
     }
 }
