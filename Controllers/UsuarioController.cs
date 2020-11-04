@@ -12,9 +12,9 @@ namespace project1.Controllers
     [Route("[controller]")]
     public class UsuarioController : ControllerBase
     {
-
         [HttpPost]
-        public int Post([FromBody] UsuarioModel usuario) {
+        public int Post([FromBody] UsuarioModel usuario)
+        {
             return usuario.Name == "Davi" && usuario.Password == "123" ? 1 : 0;
         }
     }
